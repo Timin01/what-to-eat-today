@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>今天吃什麼？</title>
+    <title>美食轉盤</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>今天吃什麼？</h1>
         <div class="wheel-outer">
-            <!-- 外框與指針 -->
             <div class="pointer-container">
                 <div class="pointer">▼</div>
             </div>
-            <!-- 轉盤 -->
             <div class="wheel-container">
                 <div class="wheel" id="wheel">
                     <div class="food-item"><span>牛肉麵</span></div>
                     <div class="food-item"><span>滷肉飯</span></div>
                     <div class="food-item"><span>炒飯</span></div>
                     <div class="food-item"><span>水餃</span></div>
+                    <div class="food-item"><span>炸雞</span></div>
                     <div class="food-item"><span>義大利麵</span></div>
-                    <div class="food-item"><span>漢堡</span></div>
                 </div>
             </div>
         </div>
-        <button id="spinButton">轉動輪盤</button>
-        <div id="result" class="result"></div>
+        <button id="spinButton">轉動</button>
+        <div class="result" id="result"></div>
     </div>
     <script src="script.js"></script>
 </body>
