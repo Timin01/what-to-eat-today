@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             spinning = false;
             const finalRotation = totalRotation % 360;
-            const itemIndex = Math.floor(finalRotation / 60) % 6;
+            const itemIndex = (6 - Math.floor(finalRotation / 60)) % 6;
             const selectedFood = items[itemIndex].querySelector('span').textContent;
             result.textContent = `今天吃：${selectedFood}！`;
         }, 3000);
